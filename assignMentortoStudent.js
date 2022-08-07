@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const objId = require("mongoose").Types.ObjectId;
 
-const { student, mentor } = require("../shared/db");
+const { student, mentor } = require("../db");
 
 router.post("/newMentor", async (req, res) => {
   console.log("assignMentorToStudent");
