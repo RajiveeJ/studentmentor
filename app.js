@@ -2,9 +2,9 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
-const { dbConnect } = require("./shared/db");
-const studentRoute = require("./routes/student");
-const mentorRoute = require("./routes/mentor");
+const { dbConnect } = require("./db");
+const studentRoute = require("./student");
+const mentorRoute = require("./mentor");
 const assignMentortoStudent = require("./routes/assignMentortoStudent");
 
 const app = express();
